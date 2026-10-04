@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asad Aziz - AI Engineer & Full-Stack Developer 3D Portfolio
 
-## Getting Started
+A high-end, production-ready 3D interactive portfolio built with **Next.js 16**, **React 19**, **Three.js / React Three Fiber**, **Tailwind CSS v4**, **Framer Motion**, **GSAP**, and **Lenis Scroll**.
 
-First, run the development server:
+---
+
+## 🚀 Getting Started
+
+### Local Development
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🛠️ Build & Type Check
+
+Validate that the application compiles without errors:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Type check
+npx tsc --noEmit
+
+# Production build test
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deploying to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is fully configured for seamless deployment on **Vercel**.
 
-## Learn More
+### Option 1: Deploy via Vercel Dashboard (Recommended)
 
-To learn more about Next.js, take a look at the following resources:
+1. Push your code to GitHub, GitLab, or Bitbucket.
+2. Go to **[vercel.com/new](https://vercel.com/new)**.
+3. Import your repository (`Asad`).
+4. Vercel will automatically detect **Next.js** framework settings (`vercel.json`).
+5. Click **Deploy**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Option 2: Deploy via Vercel CLI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install Vercel CLI (if not installed):
+   ```bash
+   npm i -g vercel
+   ```
+2. Deploy to preview environment:
+   ```bash
+   vercel
+   ```
+3. Deploy to production:
+   ```bash
+   vercel --prod
+   ```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Project Structure & Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: Next.js 16 (App Router)
+- **UI Library**: React 19, Tailwind CSS v4, Lucide Icons
+- **3D Graphics**: Three.js, React Three Fiber, React Three Drei, Postprocessing
+- **Animations**: GSAP, Framer Motion, Lenis Smooth Scroll
+- **API**: Next.js Serverless Contact Route (`/api/contact`)
